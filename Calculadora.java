@@ -21,7 +21,15 @@ public class Calculadora {
         int op1= Integer.parseInt(args[1]);
         int op2= Integer.parseInt(args[2]);
         
+        if(args[0].equals("+"))
+        {
             System.out.println(op1+op2);
+        }
+        else if(args[0].equals("-"))
+        {
+            System.out.println(op1-op2);
+        }
+                   
         
         }catch(Exception ex){
             System.out.println("Paramatros incorrectos");
